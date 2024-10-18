@@ -139,7 +139,7 @@ import { Name } from "./Name";  // Adjust the import path if necessary
 
 
 // Component: NameForm
-export const NameForm = () => {
+export const MultiStepForm = () => {
   const [formData, setFormData] = useState({
     name: ""
   });

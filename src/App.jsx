@@ -20,9 +20,9 @@
 // export default App;
 
 
-import { MultiStepForm } from "./MultiStepForm.jsx";  // Corrected path
+import { MultiStepForm } from "./components/MultiStepForm.jsx";  // Corrected path
 
-const App = () => {
+export const App = () => {
   return (
     <>
       {/* Multi Step Form */}
@@ -31,4 +31,3 @@ const App = () => {
   );
 };
 
-export default App;
