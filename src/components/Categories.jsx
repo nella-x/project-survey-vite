@@ -9,14 +9,15 @@ export const Categories = ({ updateFormData, value }) => {
     <div className="border-box">
       <label>Choose an option:</label>
       {["Career", "Love life", "Personal life"].map((option) => (
-        <label key={option}>
-          <input
+        <label key={option} className="custom-radio">
+          <li><input
             type="radio"
             value={option}
-            checked={value === option} // Ensure the checked value is bound to the current form state
-            onChange={handleRadioChange} // Handle the change to update the form state
+            checked={value === option}
+            onChange={handleRadioChange}
           />
-          {option}
+            {option}
+          </li>
         </label>
       ))}
     </div>
