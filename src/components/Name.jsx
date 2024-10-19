@@ -1,19 +1,14 @@
 import PropTypes from "prop-types";
 
-export const Name = ({ onChange, value, onSubmit }) => {
+export const Name = ({ onChange, value }) => {
   const handleNameChange = (e) => {
     onChange(e);
-  };
-
-  const handleSubmit = () => {
-    onSubmit(); // Anropa submit-funktionen
   };
 
   return (
     <div className="border-box">
       <label>Name:</label>
       <input type="text" value={value} onChange={handleNameChange} />
-      <button onClick={handleSubmit}>Submit</button> {/* Submit-knapp */}
     </div>
   );
 };
