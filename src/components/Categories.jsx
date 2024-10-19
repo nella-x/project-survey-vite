@@ -6,26 +6,25 @@ export const Categories = ({ updateFormData, value }) => {
   };
 
   return (
-    <div className="border-box">
+    <div className="radio-box">
       <label>Choose an option:</label>
       {["Career", "Love life", "Personal life"].map((option) => (
-        <label key={option} className="custom-radio">
-          <li><input
+        <label key={option} className={`custom-radio ${value === option ? "selected" : ""}`}>
+          <input
             type="radio"
             value={option}
             checked={value === option}
             onChange={handleRadioChange}
           />
-            {option}
-          </li>
+          <span>{option}</span>
         </label>
       ))}
     </div>
   );
-};
 
-// PropTypes validation
-Categories.propTypes = {
-  updateFormData: PropTypes.func.isRequired,
-  value: PropTypes.string.isRequired,
-};
+  // PropTypes validation
+  Categories.propTypes = {
+    updateFormData: PropTypes.func.isRequired,
+    value: PropTypes.string.isRequired,
+  };
+}

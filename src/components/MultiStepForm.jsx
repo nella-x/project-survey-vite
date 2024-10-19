@@ -148,18 +148,27 @@ export const MultiStepForm = () => {
   return (
     <div className="multi-step-form">
       {formSubmitted ? (
-        <>
+        <div className="horoscope-box">
           <h1>2025 Horoscope</h1>
-          <h2>{`Dear ${formData.name}`}</h2>
-          <p>{`You are a ${getZodiacSign(formData.birthday.day, formData.birthday.month)}, and here is your 2025 prediction for ${formData.categories}:`}</p>
+          <h2>{`✨ Dear ${formData.name} ✨`}</h2>
+          <p>{`As a ${getZodiacSign(formData.birthday.day, formData.birthday.month)}, the stars align, and the universe unveils your 2025  ${formData.categories} destiny:`}</p>
           <div>{prediction}</div>
-        </>
+          <button onClick={startOver} className="button-back-to-start">
+            Back to Start
+          </button>
+        </div>
       ) : (
         <>
           {currentStep === 1 && (
             <>
               <div className="question-box">
-                <h2>Step 1: Enter Your Name</h2>
+                <h1>Unlock Your <br /> 2025 Horoscope</h1>
+                <p>
+                  Curious about what the stars have in store for you in 2025?
+                  It’s just three quick questions away! Will you experience exciting career opportunities, new love, or personal transformations?
+                  Let's find out together!
+                </p>
+                <h2>Step 1: What’s Your Name?</h2>
                 {error && <p className="error">{error}</p>}
               </div>
               <div className="form-box">
