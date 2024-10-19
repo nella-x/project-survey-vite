@@ -1,3 +1,11 @@
+import { MultiStepForm } from "./components/MultiStepForm.jsx";  // Corrected path
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <>
+      {/* Multi Step Form */}
+      <MultiStepForm />
+    </>
+  );
 };
+
