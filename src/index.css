@@ -46,6 +46,10 @@ body {
   padding: 8px 0;
 }
 
+p {
+  padding: 0 10px;
+}
+
 .form-box {
   background-color: #f6f6f6;
   display: flex;
@@ -205,11 +209,15 @@ select {
     justify-content: center;
     width: 50%;
     min-height: 100vh;
-    padding: 20px 0;
+    padding: 20px;
   }
 
   .horoscope-box {
     width: 50%;
+  }
+
+  p {
+    padding: 0 20px;
   }
 
 }
