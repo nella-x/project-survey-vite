@@ -7,8 +7,8 @@ export const Name = ({ onChange, value }) => {
 
   return (
     <div className="border-box">
-      <label>Name:</label>
-      <input type="text" value={value} onChange={handleNameChange} />
+      <label htmlFor="name-input">Name:</label>
+      <input id="name-input" type="text" value={value} onChange={handleNameChange} />
     </div>
   );
 };
