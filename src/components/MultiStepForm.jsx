@@ -183,9 +183,6 @@ export const MultiStepForm = () => {
                 >
                   Submit
                 </button>
-                <button onClick={startOver} disabled={formData.name === ''}>
-                  Start Over
-                </button>
               </div>
             </>
           )}
